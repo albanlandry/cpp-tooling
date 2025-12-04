@@ -1,0 +1,13 @@
+{
+    "brokerHost": "192.168.1.10",
+    "brokerPort": 1883,
+    "useTls": false,
+    "username": "kiosk_KIOSK-001",
+    "password": "supersecret",
+    "kioskId": "KIOSK-001",
+    "mqttTopicPrefix": "kiosk/KIOSK-001",
+    "appName": "KioskApp.exe",
+    "appPath": "C:\\Kiosk\\KioskApp.exe",
+    "cardReaderServiceName": "CardReaderService",
+    "metricsIntervalSeconds": 60
+  }
