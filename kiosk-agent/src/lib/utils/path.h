@@ -10,6 +10,13 @@ std::string getTempPath();
 std::string getCachePath();
 std::string getConfigPath();
 std::string getConfigPath();
-std::string joinPath(const std::string** path1);
+
+template<typename... Args>
+std::string joinPath(const std::string& path1, const Args&... args) {
+    return joinPath(path1, args...);
+}
+
+template<typename... Paths>
+std::string joinPath(Paths&&... paths);
 
 #endif // PATH_H
